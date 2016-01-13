@@ -1,0 +1,59 @@
+.header
+  padding: ms(1) ms(0) ms(9)
+  background: linear-gradient(rgba($vintage, 0.3), rgba($vintage, 0.3)), url('../img/featured_image.png')
+    size: cover
+    position: center
+  color: $blanco
+
+  nav
+    display: flex
+    justify-content: space-between
+
+  +e(date)
+    font-style: italic
+    align-self: flex-end
+
+  +e(toggle)
+    width: 25px
+    height: 17px
+    display: flex
+    align-items: center
+    cursor: pointer
+
+    +m(burger)
+      &,&::before, &::after
+        content: ''
+        display: block
+        height: 3px
+        width: 100%
+        background: $blanco
+        position: relative
+        border-radius: 100px
+        transition: $trns-duration
+
+        &::before
+          top: -7px
+          left: 10px
+          width: 15px
+
+        &::after
+          bottom: -4px
+          width: 15px
+
+        +is(active)
+          background: transparent
+          &::selection
+            background: transparent
+
+          &::before, &::after
+            transform-origin: center
+
+          &::before
+            transform: rotate(-40deg)
+            width: 100%
+            top: 0
+            left: 0
+          &::after
+            transform: rotate(40deg)
+            width: 100%
+            bottom: 3px

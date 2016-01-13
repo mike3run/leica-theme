@@ -1,0 +1,44 @@
+.author
+  padding-top: ms(2)
+
+  +e(pic)
+    border-radius: 100px
+    max-width: 100px
+    position: relative
+
+    &::before, &::after
+      content: ''
+      display: block
+      position: absolute
+      width: 100px
+      height: 1px
+      background: $moka
+    &::before
+      top: 50%
+      right: 105%
+    &::after
+      top: 50%
+      left: 105%
+
+    img
+      border-radius: 100px
+
+  +e(by)
+    font-weight: bold
+    text-transform: uppercase
+    font-size: ms(0)
+    color: palette(gris, dark)
+    margin: ms(-3) 0
+
+  +e(name)
+    font-family: $font-family--primary
+    font-weight: $font__weight--regular
+    color: $moka
+    font-size: ms(3)
+
+  +e(bio)
+    color: palette(gris, dark)
+
+  +e(url)
+    font-weight: $font__weight--bold
+    color: palette(gris, x-dark)
