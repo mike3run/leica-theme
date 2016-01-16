@@ -13,6 +13,9 @@
     text-transform: uppercase
     font-size: ms(0)
     color: palette(gris, dark)
+    +mq(medium)
+      font-size: ms(1)
+      margin-bottom: ms(0)
 
   +e(social)
     display: flex
@@ -25,6 +28,8 @@
       height: 30px
       margin: ms(-1) ms(-2)
       transition: $trns-duration
+      +mq(medium)
+        margin: ms(-1)
 
       &:first-child
         margin-left: 0

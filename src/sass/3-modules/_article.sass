@@ -5,9 +5,11 @@
   display: flex
   flex-direction: column
 
-  h1
+  +e(title)
     font-size: ms(2)
     text-align: center
+    +mq(medium)
+      font-size: ms(3)
 
   +e(by)
     font-family: $font-family--primary
@@ -16,6 +18,8 @@
     color: $moka
     margin: 0 auto
     position: relative
+    +mq(medium)
+      font-size: ms(1)
 
     &::before, &::after
       content: ''
@@ -35,6 +39,9 @@
   p
     max-width: 90%
     margin: 0 auto
+    +mq(medium)
+      font-size: ms(1)
+      max-width: 600px
   img
     max-width: 95%
     margin: ms(2) auto

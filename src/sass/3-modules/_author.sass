@@ -5,12 +5,14 @@
     border-radius: 100px
     max-width: 100px
     position: relative
+    +mq(medium)
+      max-width: 150px
 
     &::before, &::after
       content: ''
       display: block
       position: absolute
-      width: 100px
+      width: 100%
       height: 1px
       background: $moka
     &::before
@@ -29,6 +31,7 @@
     font-size: ms(0)
     color: palette(gris, dark)
     margin: ms(-3) 0
+    +mq(medium)
 
   +e(name)
     font-family: $font-family--primary
@@ -38,7 +41,11 @@
 
   +e(bio)
     color: palette(gris, dark)
+    +mq(medium)
+      font-size: ms(1)
 
   +e(url)
     font-weight: $font__weight--bold
     color: palette(gris, x-dark)
+    +mq(medium)
+      font-size: ms(1)
