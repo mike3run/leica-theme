@@ -6,4 +6,4 @@
  *
  * http://miguel.click/ 😜
  */
-(function(){!function(){return $(".header__toggle").click(function(){return $(".header__toggle--burger").toggleClass("is-active"),$(".header__mobile-menu").toggleClass("is-open")})}()}).call(this),function(){console.log("La vida es más que bella, es hermosa")}.call(this);
+(function(){!function(){return $(".menu__toggle").click(function(){return $(".menu__toggle--burger").toggleClass("is-active"),$(".menu__mobile-menu").toggleClass("is-open")})}()}).call(this),function(){console.log("La vida es más que bella, es hermosa")}.call(this);
