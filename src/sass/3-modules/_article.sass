@@ -1,5 +1,4 @@
 .article
-  max-width: 90%
   margin: 0 auto
   padding: ms(2) 0
   display: flex
@@ -23,25 +22,63 @@
 
     &::before, &::after
       content: ''
-      width: 30px
+      width: 70%
       height: 1px
       background: $moka
       display: block
       position: absolute
     &::before
-      top: 13px
-      left: -35px
+      top: 50%
+      left: -80%
     &::after
-      top: 13px
-      right: -35px
+      top: 50%
+      right: -80%
 
+  h1, h2, h3, h4, h5, h6
+    text-align: center
+    margin: ms(-2) 0
+
+  h6
+    text-transform: uppercase
 
   p
-    max-width: 90%
+    max-width: 85%
     margin: 0 auto
     +mq(medium)
       font-size: ms(1)
       max-width: 600px
+    &:first-child::first-letter
+      font-size: ms(6)
+      float: left
+      line-height: 1
+      margin: 0 ms(-7) -16px ms(-10)
+      +mq(medium)
+        margin-bottom: -20px
+
+  p + p
+    margin-top: ms(0)
+    text-indent: ms(1)
+
+  figure
+    margin: 0 auto
+
   img
     max-width: 95%
     margin: ms(2) auto
+
+    &[alt='Fullscreen']
+      max-width: 100%
+
+  code
+   width: 100%
+   padding: ms(3) ms(2)
+   margin: ms(0) 0
+   word-wrap: break-word
+  figcaption
+    display: block
+    margin: -(ms(0)) auto ms(0)
+    text-align: center
+    width: 50%
+    border-bottom: 1px solid palette(gris, x-light)
+    +mq(medium)
+      max-width: 400px

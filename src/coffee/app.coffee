@@ -8,6 +8,11 @@
 ###
 
 do ->
-  $('.header__toggle').click ->
-    $('.header__toggle--burger').toggleClass 'is-active'
-    $('.header__mobile-menu').toggleClass 'is-open'
+  $('.menu__toggle').click ->
+    $('.menu__toggle--burger').toggleClass 'is-active'
+    $('.menu__mobile-menu').toggleClass 'is-open'
+
+do ->
+  $('code').each (i, block) ->
+    hljs.highlightBlock(block)
+    console.log 'Yeah'

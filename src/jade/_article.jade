@@ -1,10 +1,48 @@
 article.article
-  h1.article__title Great Pics with Leica
-  span.article__by by Miguel Palau
-  
-  p There's never been a better time for men to like clothes. But along with the rich variety of labels, styles, and stores speaking to guys of all shapes and sizes comes increased competition. In that crowded landscape, even the most storied brands have to find.
   p There's never been a better time for men to like clothes. But along with the rich variety of labels, styles, and stores speaking to guys of all shapes and sizes comes increased competition. In that crowded landscape, even the most storied brands have to find.
   
-  img(src='img/ghost.png', alt='A pic of the Ghost Logo')
+  p In September, McAfee announced his run for the highest office in the land as a third-party candidate. On Christmas Eve, he upped the ante, claiming in an interview with USA Today that the Libertarian party has asked that he run on their ticket. (Gary Johnson notably ran on the same ticket in 2012 after exiting from the Republican primary.)  
   
-  p In September, McAfee announced his run for the highest office in the land as a third-party candidate. On Christmas Eve, he upped the ante, claiming in an interview with USA Today that the Libertarian party has asked that he run on their ticket. (Gary Johnson notably ran on the same ticket in 2012 after exiting from the Republican primary.)
+  figure
+    img(src='img/ghost.png', alt="El logo de Ghost.org")
+    figcaption El logo de Ghost
+  
+  p There's never been a better time for men to like clothes. But along with the rich variety of labels, styles, and stores speaking to guys of all shapes and sizes comes increased competition. In that crowded landscape, even the most storied brands have to find.
+
+  h2 Subheading
+  
+  p Selvage before they sold out bushwick hashtag listicle skateboard leggings. Slow-carb flannel occupy, schlitz kickstarter jean shorts migas cray crucifix. Health goth trust fund occupy mixtape church-key plaid. Kogi next level kombucha, art party four loko microdosing echo park cornhole waistcoat. Hammock bespoke lomo, tote bag pickled pug chartreuse salvia yuccie paleo XOXO next level. Shabby chic 90's echo park, meditation deep v lumbersexual waistcoat godard paleo mustache flannel. Bushwick gastropub ethical selfies, godard hashtag shabby chic distillery leggings seitan stumptown organic pork belly.
+  
+  h3 Subheading
+  
+  p Thundercats lumbersexual yr bespoke pitchfork. Food truck try-hard 3 wolf moon twee wolf leggings, scenester narwhal blog craft beer. Shoreditch master cleanse chartreuse austin. Venmo polaroid ethical pickled narwhal, kinfolk knausgaard deep v schlitz pop-up meh seitan pug everyday carry. Artisan kinfolk twee photo booth, lomo pickled chia mixtape kogi gochujang portland kombucha iPhone raw denim. Chicharrones neutra cardigan, synth cornhole selvage poutine kale chips locavore 3 wolf moon pinterest forage you probably haven't heard of them normcore occupy. Yuccie migas pickled normcore DIY kinfolk bicycle rights flexitarian, roof party asymmetrical YOLO 3 wolf moon farm-to-table narwhal authentic.
+
+  figure
+    img(src='img/skyline.jpg', alt="Fullscreen")
+    figcaption Un hermoso Atardecer
+
+  h4 Subheading
+  
+  p Thundercats lumbersexual yr bespoke pitchfork. Food truck try-hard 3 wolf moon twee wolf leggings, scenester narwhal blog craft beer. Shoreditch master cleanse chartreuse austin. Venmo polaroid ethical pickled narwhal, kinfolk knausgaard deep v schlitz pop-up meh seitan pug everyday carry. Artisan kinfolk twee photo booth, lomo pickled chia mixtape kogi gochujang portland kombucha iPhone raw denim. Chicharrones neutra cardigan, synth cornhole selvage poutine kale chips locavore 3 wolf moon pinterest forage you probably haven't heard of them normcore occupy. Yuccie migas pickled normcore DIY kinfolk bicycle rights flexitarian, roof party asymmetrical YOLO 3 wolf moon farm-to-table narwhal authentic.
+  
+  h5 Subheading
+  
+  p Thundercats lumbersexual yr bespoke pitchfork. Food truck try-hard 3 wolf moon twee wolf leggings, scenester narwhal blog craft beer. Shoreditch master cleanse chartreuse austin. Venmo polaroid ethical pickled narwhal, kinfolk knausgaard deep v schlitz pop-up meh seitan pug everyday carry. Artisan kinfolk twee photo booth, lomo pickled chia mixtape kogi gochujang portland kombucha iPhone raw denim. Chicharrones neutra cardigan, synth cornhole selvage poutine kale chips locavore 3 wolf moon pinterest forage you probably haven't heard of them normcore occupy. Yuccie migas pickled normcore DIY kinfolk bicycle rights flexitarian, roof party asymmetrical YOLO 3 wolf moon farm-to-table narwhal authentic.
+
+  pre
+    code
+      | $(document)
+      | .on(&apos;click.bs.button.data-api&apos;, &apos;[data-toggle^=&quot;button&quot;]&apos;, function (e) {
+      | var $btn = $(e.target)
+      | if (!$btn.hasClass(&apos;btn&apos;)) $btn = $btn.closest(&apos;.btn&apos;)
+      | Plugin.call($btn, &apos;toggle&apos;)
+      | if (!($(e.target).is(&apos;input[type=&quot;radio&quot;]&apos;) || $(e.target).is(&apos;input[type=&quot;checkbox&quot;]&apos;))) e.preventDefault()
+      | })
+      | .on(&apos;focus.bs.button.data-api blur.bs.button.data-api&apos;, &apos;[data-toggle^=&quot;button&quot;]&apos;, function (e) {
+      | $(e.target).closest(&apos;.btn&apos;).toggleClass(&apos;focus&apos;, /^focus(in)?$/.test(e.type))
+      | })
+      | }(jQuery);
+
+  h6 Subheading
+  
+  p Thundercats lumbersexual yr bespoke pitchfork. Food truck try-hard 3 wolf moon twee wolf leggings, scenester narwhal blog craft beer. Shoreditch master cleanse chartreuse austin. Venmo polaroid ethical pickled narwhal, kinfolk knausgaard deep v schlitz pop-up meh seitan pug everyday carry. Artisan kinfolk twee photo booth, lomo pickled chia mixtape kogi gochujang portland kombucha iPhone raw denim. Chicharrones neutra cardigan, synth cornhole selvage poutine kale chips locavore 3 wolf moon pinterest forage you probably haven't heard of them normcore occupy. Yuccie migas pickled normcore DIY kinfolk bicycle rights flexitarian, roof party asymmetrical YOLO 3 wolf moon farm-to-table narwhal authentic.

@@ -1,63 +1,67 @@
 .header
-  padding: ms(1) ms(0) ms(9)
-  background: linear-gradient(rgba($vintage, 0.3), rgba($vintage, 0.3)), url('../img/featured_image.png')
+  background: linear-gradient(rgba(141,131,79,0.50) 0%, rgba(37,27,27,0.50) 80%), url('../img/featured_image.png')
     size: cover
-    position: center
   color: $blanco
-  +mq(medium)
-    padding: ms(1) ms(0) ms(11)
+  position: relative
   +mq(large)
-    padding: ms(1) ms(0) ms(12)
+    background-position: 50%
+  &::after
+    content: ''
+    position: relative
+    display: block
+    width: 100%
+    height: 120px
+    background: url('../img/rounded.svg') bottom no-repeat
+    bottom: -1px
 
-  nav
-    display: flex
-    justify-content: space-between
+  +e(content)
+    padding: ms(9) 0 0
+    +mq(medium)
+      padding-top: ms(10)
+    +mq(large)
+      padding-top: ms(12)
 
   +e(date)
     font-style: italic
     align-self: flex-end
 
-  +e(toggle)
-    width: 25px
-    height: 17px
-    display: flex
-    align-items: center
-    cursor: pointer
+  +e(info)
+    position: absolute
+    margin: 0 auto
+    width: 100%
+    +mq(small)
+      bottom: 20px
+    +mq(medium)
+      bottom: 40px
+    +mq(large)
+      bottom: 70px
 
-    +m(burger)
-      &,&::before, &::after
-        content: ''
-        display: block
-        height: 3px
-        width: 100%
-        background: $blanco
-        position: relative
-        border-radius: 100px
-        transition: $trns-duration
+  +e(title)
+    font-size: ms(2)
+    text-align: center
+    +mq(medium)
+      font-size: ms(3)
 
-        &::before
-          top: -7px
-          left: 10px
-          width: 15px
+  +e(by)
+    font-family: $font-family--primary
+    font-style: italic
+    text-align: center
+    color: $blanco
+    margin: 0 auto
+    position: relative
+    +mq(medium)
+      font-size: ms(1)
 
-        &::after
-          bottom: -4px
-          width: 15px
-
-        +is(active)
-          background: transparent
-          &::selection
-            background: transparent
-
-          &::before, &::after
-            transform-origin: center
-
-          &::before
-            transform: rotate(-40deg)
-            width: 100%
-            top: 0
-            left: 0
-          &::after
-            transform: rotate(40deg)
-            width: 100%
-            bottom: 3px
+    &::before, &::after
+      content: ''
+      width: 70%
+      height: 1px
+      background: $blanco
+      display: block
+      position: absolute
+    &::before
+      top: 50%
+      left: -80%
+    &::after
+      top: 50%
+      right: -80%

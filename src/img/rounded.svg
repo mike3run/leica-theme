@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 0 1440 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>rounded</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Post" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD" sketch:type="MSArtboardGroup" transform="translate(0.000000, -741.000000)" fill="#FFFFFF">
+            <path d="M0,741 C0,741 479.286408,784.886719 720,784.886719 C959.286408,784.886719 1440,741 1440,741 L1440,828.773438 L0,828.773438 L0,741 Z" id="rounded" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
