@@ -12,7 +12,8 @@
     width: 100%
     height: 120px
     background: url('../img/rounded.svg') bottom no-repeat
-    bottom: -1px
+      size: cover
+    bottom: -5px
 
   +e(content)
     padding: ms(9) 0 0
@@ -29,12 +30,11 @@
     position: absolute
     margin: 0 auto
     width: 100%
-    +mq(small)
-      bottom: 20px
+    bottom: 70px
     +mq(medium)
-      bottom: 40px
+      bottom: 90px
     +mq(large)
-      bottom: 70px
+      bottom: 110px
 
   +e(title)
     font-size: ms(2)
@@ -54,14 +54,14 @@
 
     &::before, &::after
       content: ''
-      width: 70%
+      width: 50%
       height: 1px
       background: $blanco
       display: block
       position: absolute
     &::before
       top: 50%
-      left: -80%
+      left: -60%
     &::after
       top: 50%
-      right: -80%
+      right: -60%

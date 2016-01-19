@@ -36,10 +36,8 @@
 
   h1, h2, h3, h4, h5, h6
     text-align: center
-    margin: ms(-2) 0
-
-  h6
-    text-transform: uppercase
+    margin: ms(-2) auto
+    max-width: 85%
 
   p
     max-width: 85%
@@ -61,19 +59,25 @@
 
   figure
     margin: 0 auto
-
+    display: block
   img
     max-width: 95%
     margin: ms(2) auto
 
-    &[alt='Fullscreen']
+    &[alt='Fullscreen'], &[alt='fullscreen']
       max-width: 100%
 
+  pre
+    background: #23241f
+    padding: ms(0) 0
+
   code
-   width: 100%
-   padding: ms(3) ms(2)
-   margin: ms(0) 0
+   max-width: 85%
+   margin: ms(0) auto
    word-wrap: break-word
+   +mq(medium)
+      max-width: 900px
+
   figcaption
     display: block
     margin: -(ms(0)) auto ms(0)
