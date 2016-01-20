@@ -3,6 +3,6 @@
 if $('.header').attr('poster') != null
   header = $('.header')
   poster = $('.header').attr('poster')
-  url = "linear-gradient(rgba(141,131,79,0.50) 0%, rgba(37,27,27,0.50) 80%) , url('#{poster}') center / cover"
+  url = "linear-gradient(rgba(52,73,105,0.51) 0%, rgba(179,195,226,0.30) 80%) , url('#{poster}') center / cover"
 
   header.css 'background', url

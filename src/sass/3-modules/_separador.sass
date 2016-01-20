@@ -1,0 +1,23 @@
+.separador
+  text-align: center
+
+  +e(title)
+    font-size: ms(1)
+    text-transform: uppercase
+    font-family: $font-family--secondary
+    font-weight: $font__weight--medium
+    position: relative
+
+    &::before, &::after
+      content: ''
+      width: 30%
+      height: 1px
+      background: $negro
+      display: block
+      position: absolute
+    &::before
+      top: 50%
+      left: -40%
+    &::after
+      top: 50%
+      right: -40%
