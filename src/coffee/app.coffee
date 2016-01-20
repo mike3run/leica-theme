@@ -7,12 +7,9 @@
 # http://miguel.click/ 😜
 ###
 
+
+# Simple función para que el menú cambie de clase y por ende se anime la X cuando se pique
 do ->
   $('.menu__toggle').click ->
     $('.menu__toggle--burger').toggleClass 'is-active'
     $('.menu__mobile-menu').toggleClass 'is-open'
-
-do ->
-  $('code').each (i, block) ->
-    hljs.highlightBlock(block)
-    console.log 'Yeah'
